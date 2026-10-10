@@ -1,0 +1,162 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 200px;
+}
+
+#header{
+    background-image:url("images/torshov.jpg");
+    background-size: cover;
+    height: 400px;
+    padding-top:225px;
+}
+
+#title{
+    font-size: 50px;
+    background-color: #1d3557;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 325px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#description{
+    font-size: 30px;
+    background-color:#457b9d ;
+    display: block;
+    width: 575px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 35px;
+    border-radius: 10px;
+}
+
+
+#activites{
+    background-color: #F1FAEE;
+    margin-top: -100px;
+}
+
+#activities-text{
+    font-size: 50px;
+    font-weight: bold;
+    color:#1d3557;
+    margin-top:50px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+#images-section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 100px 100px 0px 150px;
+}
+
+
+.image-card{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    width: 500px;
+    padding-right: 200px;
+}
+
+.image{
+    border-radius: 100px;
+    margin-left: 25px;
+}
+
+.image-title{
+    text-align: center;
+    color: #1d3557;
+    font-size: 25px;
+    font-weight: bold;
+    width: 250px;
+}
+
+.image-description{
+    text-align: center;
+    color: #1d3557;
+    font-size: 25px;
+    width: 325px;
+    margin-left: -25px;
+}
+
+
+#guide{
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    background-color: #A8DADC ;
+    color: #1d3557;
+    border-radius: 20px;
+    border-bottom: #1d3557 10px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 420px;
+    height: 294px;
+
+}
+
+#card-description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#guide-image{
+    border-radius: 15px;
+    width: 180px;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 5px;
+    padding-left: 20px;
+
+}
+
+#guide-text{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#guide-description{
+    font-style: italic;
+    margin-bottom: 10px;
+    width:200px;
+
+}
+
+#guide-name{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+
