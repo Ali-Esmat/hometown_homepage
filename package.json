@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s04h5q2",
-  "description": "https://scrimba.com/fullstack-path-c0fullstack/~041/s0vsd4paoq/head",
+  "name": "hometown-homepage",
+  "description": "A homepage about my hometown, Torshov, in Oslo, https://scrimba.com/fullstack-path-c0fullstack/~041/s0vsd4paoq/head",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,7 +8,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vite": "latest"
-  },
-  "devDependencies": {}
+    "vite": "^8.3.4"
+  }
 }

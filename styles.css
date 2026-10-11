@@ -8,154 +8,137 @@ DARK BLUE: #1D3557
 
 */
 
+:root {
+    --light: #F1FAEE;
+    --aqua: #A8DADC;
+    --light-blue: #457B9D;
+    --dark-blue: #1D3557;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     text-align: center;
-    color:white;
+    color: var(--dark-blue);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-    width: 200px;
+.hero {
+    min-height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background: var(--light-blue) url("images/torshov.jpg") center / cover;
+    color: white;
 }
 
-#header{
-    background-image:url("images/torshov.jpg");
-    background-size: cover;
-    height: 400px;
-    padding-top:225px;
+.hero-title { 
+    margin: 0; 
+    padding: 0.1em 0.4em; 
+    font-size: 3rem; 
+    background-color: var(--dark-blue); 
+    border-radius: 10px; 
 }
 
-#title{
-    font-size: 50px;
-    background-color: #1d3557;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 325px;
-    padding: 5px 10px;
+.hero-subtitle {
+    margin: 0;
+    max-width: 40rem;
+    padding: 0.3em 1em;
+    font-size: 1.75rem;
+    background-color: var(--light-blue);
     border-radius: 10px;
 }
 
-#description{
-    font-size: 30px;
-    background-color:#457b9d ;
-    display: block;
-    width: 575px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 35px;
-    border-radius: 10px;
+.activities { 
+    padding: 4rem 1.5rem; 
+    background-color: var(--light); 
 }
 
-
-#activites{
-    background-color: #F1FAEE;
-    margin-top: -100px;
+.section-title { 
+    margin: 0 0 3rem; 
+    font-size: 2.5rem; 
 }
 
-#activities-text{
-    font-size: 50px;
-    font-weight: bold;
-    color:#1d3557;
-    margin-top:50px;
-    padding-top: 50px;
-    margin-bottom: 50px;
+.cards { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 3rem; 
 }
 
-#images-section{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 100px 100px 0px 150px;
+.card { 
+    flex: 0 1 18rem; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 0.5rem; 
 }
 
-
-.image-card{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    text-align: center;
-    width: 500px;
-    padding-right: 200px;
+.card-image { 
+    width: 200px; 
+    aspect-ratio: 1; 
+    object-fit: cover; 
+    border-radius: 50%; 
 }
 
-.image{
-    border-radius: 100px;
-    margin-left: 25px;
+.card-title { 
+    margin: 0.5rem 0 0; 
+    font-size: 1.5rem; 
 }
 
-.image-title{
-    text-align: center;
-    color: #1d3557;
-    font-size: 25px;
-    font-weight: bold;
-    width: 250px;
+.card-text { 
+    margin: 0; 
+    font-size: 1.25rem; 
 }
 
-.image-description{
-    text-align: center;
-    color: #1d3557;
-    font-size: 25px;
-    width: 325px;
-    margin-left: -25px;
+.guide {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 26rem; 
+    margin: 3rem auto; 
+    padding: 1.5rem;
+    background-color: var(--aqua); 
+    border-radius: 20px; 
+    border-bottom: 10px solid var(--dark-blue);
 }
 
-
-#guide{
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
-    background-color: #A8DADC ;
-    color: #1d3557;
-    border-radius: 20px;
-    border-bottom: #1d3557 10px solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 420px;
-    height: 294px;
-
+.guide-image { 
+    width: 180px; 
+    aspect-ratio: 18 / 25; 
+    object-fit: cover; 
+    border-radius: 15px; 
 }
 
-#card-description{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-right: 10px;
-    padding-left: 10px;
-    padding-right: 5px;
+.guide-body { 
+    flex: 1 1 10rem; 
 }
 
-#guide-image{
-    border-radius: 15px;
-    width: 180px;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 5px;
-    padding-left: 20px;
-
+.guide-heading {
+    margin: 0 0 0.5rem; 
+    font-size: 1.9rem; 
 }
 
-#guide-text{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
+.guide-quote { 
+    margin: 0 0 0.75rem; 
+    font-style: italic; 
 }
 
-#guide-description{
-    font-style: italic;
-    margin-bottom: 10px;
-    width:200px;
-
-}
-
-#guide-name{
-    font-size: 20px;
-    font-weight: bold;
-
+.guide-name { 
+    margin: 0; 
+    font-size: 1.25rem; 
+    font-weight: bold; 
 }
 
 
