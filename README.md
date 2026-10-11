@@ -1,6 +1,6 @@
-# Visit Torshov
+# Visit Giza
 
-A single-page homepage about Torshov, a district in Oslo, Norway. It features a hero banner, three recommended activities, and a local guide card.
+A single-page homepage about Giza, Egypt. It features a hero banner, six recommended activities, and a local guide card.
 
 Built with HTML and CSS, using Vite as the dev server.
 
