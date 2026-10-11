@@ -8,11 +8,19 @@ DARK BLUE: #1D3557
 
 */
 
+.happy-monkey-regular {
+  font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 :root {
-    --light: #F1FAEE;
-    --aqua: #A8DADC;
-    --light-blue: #457B9D;
-    --dark-blue: #1D3557;
+    --dark-blue: #14213d;
+    --gold: #fca311;
+    --light:#e5e5e5;
+    --black: #000000;
+    --white: #ffff;
 }
 
 *, *::before, *::after {
@@ -22,8 +30,9 @@ DARK BLUE: #1D3557
 body {
     margin: 0;
     text-align: center;
-    color: var(--dark-blue);
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gold);
+    font-family: "Happy Monkey", sans-serif;
+    background-image: linear-gradient(var(--gold),var(--black)); 
 }
 
 .hero {
@@ -34,8 +43,8 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 2rem 1rem;
-    background: var(--light-blue) url("images/torshov.jpg") center / cover;
-    color: white;
+    background: var(--dark-blue) url("images/Giza-2.webp") center / cover;
+    color: var(--gold);
 }
 
 .hero-title { 
@@ -51,13 +60,13 @@ body {
     max-width: 40rem;
     padding: 0.3em 1em;
     font-size: 1.75rem;
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
     border-radius: 10px;
 }
 
 .activities { 
     padding: 4rem 1.5rem; 
-    background-color: var(--light); 
+    background-image: linear-gradient(var(--dark-blue), var(--black)); 
 }
 
 .section-title { 
@@ -90,6 +99,14 @@ body {
     border-radius: 50%; 
 }
 
+.card-image:hover{
+    width: 300px;
+    height: 300px; 
+    aspect-ratio: 1; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
 .card-title { 
     margin: 0.5rem 0 0; 
     font-size: 1.5rem; 
@@ -101,6 +118,7 @@ body {
 }
 
 .guide {
+    background-image: linear-gradient(var(--black),var(--dark-blue)); 
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
@@ -109,9 +127,13 @@ body {
     max-width: 26rem; 
     margin: 3rem auto; 
     padding: 1.5rem;
-    background-color: var(--aqua); 
     border-radius: 20px; 
     border-bottom: 10px solid var(--dark-blue);
+}
+
+.guide:hover{
+    background-image:linear-gradient(var(--dark-blue),var(--dark-blue));
+    cursor: pointer;
 }
 
 .guide-image { 
@@ -139,6 +161,10 @@ body {
     margin: 0; 
     font-size: 1.25rem; 
     font-weight: bold; 
+}
+
+#footer{
+    margin: 5rem;
 }
 
 
